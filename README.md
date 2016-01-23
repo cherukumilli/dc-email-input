@@ -1,61 +1,41 @@
-# dc-email-input
 
-An element providing a starting point for your own reusable Polymer elements.
+<!---
 
+This README is automatically generated from the comments in these files:
+dc-email-input.html
 
-## Dependencies
+Edit those files, and our readme bot will duplicate them over here!
+Edit this file, and the bot will squash your changes :)
 
-Element dependencies are managed via [Bower](http://bower.io/). You can
-install that via:
+-->
 
-    npm install -g bower
-
-Then, go ahead and download the element's dependencies:
-
-    bower install
+_[Demo and API Docs](https://cherukumilli.github.io/dc-email-input)_
 
 
-## Playing With Your Element
-
-If you wish to work on your element in isolation, we recommend that you use
-[Polyserve](https://github.com/PolymerLabs/polyserve) to keep your element's
-bower dependencies in line. You can install it via:
-
-    npm install -g polyserve
-
-And you can run it via:
-
-    polyserve
-
-Once running, you can preview your element at
-`http://localhost:8080/components/dc-email-input/`, where `dc-email-input` is the name of the directory containing it.
+##&lt;dc-email-input&gt;
 
 
-## Testing Your Element
+`<dc-email-input>` is a single-line text field with Material Design styling
+for entering an email address.
 
-Simply navigate to the `/test` directory of your element to run its tests. If
-you are using Polyserve: `http://localhost:8080/components/dc-email-input/test/`
+This field has the mail icon as prefix and clear icon as the suffix.
 
-### web-component-tester
+    <dc-email-input></dc-email-input>
 
-The tests are compatible with [web-component-tester](https://github.com/Polymer/web-component-tester).
-Install it via:
+It may include an optional label, which by default is "Email".
 
-    npm install -g web-component-tester
+    <dc-email-input label="your email address"></dc-email-input>
 
-Then, you can run your tests on _all_ of your local browsers via:
+### Validation
 
-    wct
+The input can be automatically validated as the user is typing by using
+the `auto-validate` and `required` attributes. For manual validation, the
+element also has a `validate()` method, which returns the validity of the
+input as well sets any appropriate error messages and styles.
 
-#### WCT Tips
+See `Polymer.PaperInputBehavior` for more API docs.
 
-`wct -l chrome` will only run tests in chrome.
+### Styling
 
-`wct -p` will keep the browsers alive after test runs (refresh to re-run).
-
-`wct test/some-file.html` will test only the files you specify.
-
-
-## Yeoman support
-
-If you'd like to use Yeoman to scaffold your element that's possible. The official [`generator-polymer`](https://github.com/yeoman/generator-polymer) generator has a [`seed`](https://github.com/yeoman/generator-polymer#seed) subgenerator.
+See `Polymer.PaperInputContainer` for a list of custom properties used to
+style this element.
