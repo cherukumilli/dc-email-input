@@ -2,17 +2,17 @@
   "name": "dc-email-input",
   "version": "1.0.7",
   "authors": [
-    "Anonymous <anonymous@example.com>"
+    "cherukumilli"
   ],
-  "description": "An element providing a solution to no problem in particular.",
+  "description": "Email element with decorations like mail icon prefix and clear icon suffix.",
   "keywords": [
     "web-component",
     "polymer",
-    "seed"
+    "dc-email-input"
   ],
   "main": "dc-email-input.html",
   "license": "http://polymer.github.io/LICENSE.txt",
-  "homepage": "https://github.com/<USERNAME>/seed-element/",
+  "homepage": "https://github.com/cherukumilli/dc-email-input/",
   "ignore": [
     "/.*",
     "/test/"
