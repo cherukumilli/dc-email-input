@@ -1,13 +1,3 @@
-
-<!---
-
-This README is automatically generated from the comments in these files:
-dc-email-input.html
-
-Edit those files, and our readme bot will duplicate them over here!
-Edit this file, and the bot will squash your changes :)
-
--->
 [![Build Status](https://travis-ci.org/cherukumilli/dc-email-input.svg?branch=master)](https://travis-ci.org/cherukumilli/dc-email-input)
 
 _[Demo and API Docs](https://cherukumilli.github.io/dc-email-input)_
