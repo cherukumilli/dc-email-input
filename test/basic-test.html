@@ -47,6 +47,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </template>
   </test-fixture>
 
+  <test-fixture id="clear-icon">
+    <template>
+      <dc-email-input value="email@test.com"></dc-email-input>
+    </template>
+  </test-fixture>
+
   <script>
 
     suite('basic', function() {
@@ -232,6 +238,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       test('random string is valid', function() {
         testEmail('no-regex', 'batman', true);
+      });
+
+    });
+
+    suite('check if clicking on clear icon clears the input', function() {
+
+      test('clear input on click', function() {
+        var input = fixture('clear-icon');
+        input.value = 'email@test.com';
+        forceXIfStamp(input);
+        assert.equal(input.value, 'email@test.com', 'before clicking on clear... input.value equals email@test.com');
+        var clearIcon = Polymer.dom(input.root).querySelector('#clear');
+        assert.ok(clearIcon, 'paper-icon-button exists');
+        clearIcon.click();
+        assert.equal(input.value, '', 'after clicking on clear input.value equals empty string');
       });
 
     });
