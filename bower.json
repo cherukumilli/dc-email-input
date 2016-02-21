@@ -15,7 +15,6 @@
     "clear icon"
   ],
   "main": "dc-email-input.html",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git://github.com/PolymerElements/gold-email-input.git"
